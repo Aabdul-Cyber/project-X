@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MEN</title>
+    <link rel="stylesheet" href="/styles/header.css">
+    <link rel="stylesheet" href="/styles/men.css">
+    <link rel="stylesheet" href="/styles/footer.css">
+  </head>
+  <body>
+    <div class="header">
+      <div class="left-section">
+        LOGO
+      </div>
+      <div id="nav-menu" class="middle-section">
+        <a href="/html/home.html" class="header-link">HOME</a>
+        <a href="/html/women.html" class="header-link" target="_blank">WOMEN'S</a>
+        <a href="#" class="header-link header-link1">MEN'S</a>
+        <a href="/html/contact.html" class="header-link" target="_blank">CONTACT</a>
+      </div>
+      <div class="middle-section1">
+        <p class="paragraph">MEN's</p>
+      </div>
+      <div class="right-section">
+        <div class="signinn">
+          <div>
+            <button class="login-btn" onclick="document.getElementById('id01').style.display='block'">Login</button>
+            <div id="id01" class="modal">
+              <form class="modal-content animate" action="/action_page.php" method="post">
+                <div class="imgcontainer">
+                  <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+                  <img src="/images/img_avatar2.png" alt="Avatar" class="avatar">
+                </div>
+            
+                <div class="container">
+                  <label for="uname"><b>Username</b></label>
+                  <input type="text" placeholder="Enter Username" name="uname" required>
+            
+                  <label for="psw"><b>Password</b></label>
+                  <input type="password" placeholder="Enter Password" name="psw" required>
+                    
+                  <button type="submit">Login</button>
+                  <label>
+                    <input type="checkbox" checked="checked" name="remember"> Remember me
+                  </label>
+                </div>
+            
+                <div class="container" style="background-color:#f1f1f1">
+                  <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+                  <span class="psw">Forgot <a href="#">password?</a></span>
+                </div>
+              </form>
+            </div>
+          </div>
+          <div>
+            <a class="register-btn" href="">Register</a>
+          </div>
+        </div>
+        <button class="hamburger" id="hamburger-icon">
+          <span onclick="openNavbar()"> ☰</span>
+        </button>
+      </div>
+    </div>
+
+    <div class="product-grid">
+      <div class="productt">
+        <img class="product-image" src="/images/image2.jpg" alt="">
+        <div class="pricetag">
+          <div class="price-div">
+            <p class="price-p">$980</p>
+          </div>
+          <div class="buy-div">
+            <a class="buy" href="#">BUY</a>
+          </div>
+        </div> 
+      </div>
+      <div class="productt">
+        <img class="product-image" src="/images/image5.jpg" alt="">
+        <div class="pricetag">
+          <div class="price-div">
+            <p class="price-p">$660</p>
+          </div>
+          <div class="buy-div">
+            <a class="buy" href="#">BUY</a>
+          </div>
+        </div> 
+      </div>
+      <div class="productt">
+        <img class="product-image" src="/images/image7.jpg" alt="">
+        <div class="pricetag">
+          <div class="price-div">
+            <p class="price-p">$60</p>
+          </div>
+          <div class="buy-div">
+            <a class="buy" href="#">BUY</a>
+          </div>
+        </div> 
+      </div>
+      <div class="productt">
+        <img class="product-image" src="/images/image3.jpg" alt="">
+        <div class="pricetag">
+          <div class="price-div">
+            <p class="price-p">$990</p>
+          </div>
+          <div class="buy-div">
+            <a class="buy" href="#">BUY</a>
+          </div>
+        </div> 
+      </div>
+      <div class="productt">
+        <img class="product-image" src="/images/image8.jpg" alt="">
+        <div class="pricetag">
+          <div class="price-div">
+            <p class="price-p">$190</p>
+          </div>
+          <div class="buy-div">
+            <a class="buy" href="#">BUY</a>
+          </div>
+        </div> 
+      </div>
+      <div class="productt">
+        <img class="product-image" src="/images/image6.jpg" alt="">
+        <div class="pricetag">
+          <div class="price-div">
+            <p class="price-p">$220</p>
+          </div>
+          <div class="buy-div">
+            <a class="buy" href="#">BUY</a>
+          </div>
+        </div> 
+      </div>
+      <div class="productt">
+        <img class="product-image" src="/images/image4.jpg" alt="">
+        <div class="pricetag">
+          <div class="price-div">
+            <p class="price-p">$125</p>
+          </div>
+          <div class="buy-div">
+            <a class="buy" href="#">BUY</a>
+          </div>
+        </div> 
+      </div>
+      <div class="productt">
+        <img class="product-image" src="/images/image15.jpg" alt="">
+        <div class="pricetag">
+          <div class="price-div">
+            <p class="price-p">$200</p>
+          </div>
+          <div class="buy-div">
+            <a class="buy" href="#">BUY</a>
+          </div>
+        </div> 
+      </div>
+    </div>
+
+    <footer>
+      <div class="footer-container">
+        <div class="footer-links">
+          <ul>
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">Contact Us</a></li>
+            <li><a href="#">FAQs</a></li>
+            <li><a href="#">Terms & Conditions</a></li>
+          </ul>
+        </div>
+    
+        <div class="footer-newsletter">       
+          <input class="search-bar" type="text" placeholder="Enter your email address">
+          <button class="button">Subscribe</button>
+        </div>
+    
+        <div class="footer-copyright">
+          <p>Copyright ©️ 2023 Clothing Sale. All rights reserved.</p>
+        </div>
+      </div>
+    </footer>
+
+    <script src="/pactice.js"></script>
+  </body>
+</html>
